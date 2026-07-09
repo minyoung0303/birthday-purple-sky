@@ -1,0 +1,169 @@
+.card {
+  padding: 24px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 16px 40px rgba(16, 10, 44, 0.28);
+}
+
+.heading h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.heading p {
+  color: #d8d1ff;
+  font-size: 0.96rem;
+}
+
+.form {
+  margin-top: 20px;
+  display: grid;
+  gap: 16px;
+}
+
+.label {
+  display: grid;
+  gap: 8px;
+}
+
+.label span {
+  color: #f4efff;
+  font-size: 0.93rem;
+}
+
+.input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.input::placeholder {
+  color: rgba(234, 228, 255, 0.52);
+}
+
+.input:focus {
+  border-color: rgba(185, 167, 255, 0.8);
+  box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  color: #c9c1f5;
+  font-size: 0.84rem;
+}
+
+.button {
+  min-height: 48px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #6c63ff 0%, #8f7cff 100%);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 0 24px rgba(108, 99, 255, 0.32);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.button:hover {
+  box-shadow: 0 0 32px rgba(108, 99, 255, 0.42);
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.feedback {
+  color: #e9e2ff;
+  font-size: 0.92rem;
+}
+
+.error {
+  color: #ffcaea;
+  font-size: 0.92rem;
+}
+
+.imageSection {
+  display: grid;
+  gap: 10px;
+}
+
+.imageLabel {
+  color: #f4efff;
+  font-size: 0.93rem;
+}
+
+.imageControls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.imageButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #e9e2ff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.imageButton:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(185, 167, 255, 0.5);
+}
+
+.fileInput {
+  display: none;
+}
+
+.removeButton {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 130, 180, 0.15);
+  border: 1px solid rgba(255, 130, 180, 0.3);
+  color: #ffcaea;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.removeButton:hover {
+  background: rgba(255, 130, 180, 0.25);
+}
+
+.previewWrapper {
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.preview {
+  display: block;
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.imageHint {
+  color: #c9c1f5;
+  font-size: 0.8rem;
+}

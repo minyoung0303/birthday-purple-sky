@@ -1,0 +1,75 @@
+.hero {
+  min-height: 72vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 82px 0 24px;
+  text-align: center;
+}
+
+.sheepWrap {
+  margin-bottom: 22px;
+}
+
+.sheep {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  font-size: 2.4rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow:
+    0 10px 30px rgba(24, 12, 66, 0.34),
+    0 0 20px rgba(185, 167, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(14px);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  color: #ddd6ff;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.98rem;
+}
+
+.name {
+  margin: 0;
+  font-size: clamp(3rem, 9vw, 5.4rem);
+  line-height: 1.05;
+  color: #ffffff;
+  text-shadow: 0 0 26px rgba(108, 99, 255, 0.24);
+}
+
+.date {
+  display: inline-flex;
+  padding: 10px 16px;
+  margin-top: 8px;
+  border-radius: 999px;
+  color: #f4efff;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: 66vh;
+    padding-top: 62px;
+  }
+
+  .sheep {
+    width: 68px;
+    height: 68px;
+    font-size: 2rem;
+  }
+}

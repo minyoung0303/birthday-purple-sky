@@ -1,0 +1,125 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top, rgba(108, 99, 255, 0.22), transparent 30%),
+    radial-gradient(circle at 80% 20%, rgba(255, 182, 230, 0.14), transparent 20%),
+    linear-gradient(180deg, #140f2f 0%, #1b1440 45%, #0f0b24 100%);
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 0 0 120px;
+}
+
+.section {
+  padding: 88px 0 24px;
+}
+
+.sectionHeader {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.sectionHeader h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: #d8d1ff;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+}
+
+.heroCard {
+  width: min(720px, 100%);
+  margin: 0 auto;
+  padding: 14px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 16px 40px rgba(20, 12, 52, 0.48),
+    0 0 30px rgba(108, 99, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(18px);
+}
+
+.heroImage {
+  width: 100%;
+  height: clamp(300px, 52vw, 520px);
+  object-fit: cover;
+  border-radius: 22px;
+  display: block;
+}
+
+.mainMessage {
+  margin-top: 28px;
+  text-align: center;
+}
+
+.mainMessage h3 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.mainMessage p {
+  color: #e2ddff;
+  font-size: 1.05rem;
+}
+
+.messageSection {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .messageSection {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 72px 0 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .main {
+    width: min(100% - 20px, 1120px);
+  }
+
+  .heroCard {
+    padding: 10px;
+    border-radius: 24px;
+  }
+
+  .heroImage {
+    height: 260px;
+    border-radius: 18px;
+  }
+
+  .sectionHeader h2 {
+    font-size: 1.8rem;
+  }
+
+  .mainMessage p {
+    font-size: 0.96rem;
+    line-height: 1.7;
+  }
+}
